@@ -1,0 +1,75 @@
+body{
+    background-color: lightgoldenrodyellow;
+    font-family: "New Amsterdam", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+.wrapper {
+    width: 1000px;
+    height: 500px;
+    background-color: red;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid blue;
+    border-radius: 20px;
+  }
+  .slide-imgs {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    list-style: none;
+    display: flex;
+    width: 5000px;
+    transition: 1s;
+    left: 0; /*控制屬性*/
+  }
+  .slide-imgs li {
+    width: 1000px;
+    height: 500px;
+  }
+  .slide-imgs li img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /*調整比例, 原圖會被裁切 */
+  }
+  .pages {
+    position: absolute;
+    bottom: 10px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+  .pages li {
+    border: 1px solid white;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin: 0 5px;
+  }
+  .pagesLi {
+    background-color: white;
+    opacity: 0.3;
+  }
+  .arrow {
+    position: absolute;
+    z-index: 1;
+    font-size: 36px;
+    width: 30px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    cursor: pointer;
+    opacity: 0.6;
+  }
+  .arrow:hover {
+    opacity: 1;
+  }
+  .right {
+    right: 0;
+  }
